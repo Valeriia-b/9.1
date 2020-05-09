@@ -2,7 +2,15 @@ package ru.netology.domain;
 
 public class Repostsinfo {
     private int count;
-    private boolean canRepost;
+    private int userReposted;
+
+    public int getUserReposted() {
+        return userReposted;
+    }
+
+    public void setUserReposted(int userReposted) {
+        this.userReposted = userReposted;
+    }
 
     public int getCount() {
         return count;
@@ -12,11 +20,5 @@ public class Repostsinfo {
         this.count = count;
     }
 
-    public boolean isCanRepost() {
-        return canRepost;
-    }
 
-    public void setCanRepost(boolean canRepost) {
-        this.canRepost = canRepost;
-    }
 }
