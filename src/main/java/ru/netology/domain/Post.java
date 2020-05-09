@@ -1,6 +1,6 @@
 package ru.netology.domain;
 
-public class Vk {
+public class Post {
     private int id;
     private int ownerId;
     private int fromId;
@@ -195,7 +195,7 @@ public class Vk {
         this.postponedId = postponedId;
     }
 
-    public Vk() {
+    public Post() {
     }
 
     public int getId() {
