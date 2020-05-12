@@ -1,6 +1,6 @@
 package ru.netology.domain;
 
-public class Postsourse {
+public class PostSourse {
     private String type;
     private String platform;
     private String date;

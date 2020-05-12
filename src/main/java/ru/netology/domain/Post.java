@@ -10,13 +10,13 @@ public class Post {
     private int replyOwwnerId;
     private int replyPostId;
     private int friendsOnly;
-    private Commentsinfo commentsinfo;
+    private CommentsInfo commentsInfo;
     private String copyright;
-    private Likesinfo likesinfo;
-    private Repostsinfo repostsinfo;
-    private Viewsinfo viewsinfo;
+    private LikesInfo likesInfo;
+    private RepostsInfo repostsInfo;
+    private ViewsInfo viewsInfo;
     private String postType;
-    private Postsourse postsourse;
+    private PostSourse postSourse;
     private Geo geo;
     private int signerId;
     private int canPin;
@@ -26,6 +26,22 @@ public class Post {
     private int markedAsAds;
     private boolean isFavorite;
     private int postponedId;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getOwnerId() {
+        return ownerId;
+    }
+
+    public void setOwnerId(int ownerId) {
+        this.ownerId = ownerId;
+    }
 
     public int getFromId() {
         return fromId;
@@ -41,6 +57,22 @@ public class Post {
 
     public void setCreatedBy(int createdBy) {
         this.createdBy = createdBy;
+    }
+
+    public int getDate() {
+        return date;
+    }
+
+    public void setDate(int date) {
+        this.date = date;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
     }
 
     public int getReplyOwwnerId() {
@@ -67,12 +99,12 @@ public class Post {
         this.friendsOnly = friendsOnly;
     }
 
-    public Commentsinfo getCommentsinfo() {
-        return commentsinfo;
+    public CommentsInfo getCommentsInfo() {
+        return commentsInfo;
     }
 
-    public void setCommentsinfo(Commentsinfo commentsinfo) {
-        this.commentsinfo = commentsinfo;
+    public void setCommentsInfo(CommentsInfo commentsInfo) {
+        this.commentsInfo = commentsInfo;
     }
 
     public String getCopyright() {
@@ -83,28 +115,28 @@ public class Post {
         this.copyright = copyright;
     }
 
-    public Likesinfo getLikesinfo() {
-        return likesinfo;
+    public LikesInfo getLikesInfo() {
+        return likesInfo;
     }
 
-    public void setLikesinfo(Likesinfo likesinfo) {
-        this.likesinfo = likesinfo;
+    public void setLikesInfo(LikesInfo likesInfo) {
+        this.likesInfo = likesInfo;
     }
 
-    public Repostsinfo getRepostsinfo() {
-        return repostsinfo;
+    public RepostsInfo getRepostsInfo() {
+        return repostsInfo;
     }
 
-    public void setRepostsinfo(Repostsinfo repostsinfo) {
-        this.repostsinfo = repostsinfo;
+    public void setRepostsInfo(RepostsInfo repostsInfo) {
+        this.repostsInfo = repostsInfo;
     }
 
-    public Viewsinfo getViewsinfo() {
-        return viewsinfo;
+    public ViewsInfo getViewsInfo() {
+        return viewsInfo;
     }
 
-    public void setViewsinfo(Viewsinfo viewsinfo) {
-        this.viewsinfo = viewsinfo;
+    public void setViewsInfo(ViewsInfo viewsInfo) {
+        this.viewsInfo = viewsInfo;
     }
 
     public String getPostType() {
@@ -115,12 +147,12 @@ public class Post {
         this.postType = postType;
     }
 
-    public Postsourse getPostsourse() {
-        return postsourse;
+    public PostSourse getPostSourse() {
+        return postSourse;
     }
 
-    public void setPostsourse(Postsourse postsourse) {
-        this.postsourse = postsourse;
+    public void setPostSourse(PostSourse postSourse) {
+        this.postSourse = postSourse;
     }
 
     public Geo getGeo() {
@@ -194,41 +226,4 @@ public class Post {
     public void setPostponedId(int postponedId) {
         this.postponedId = postponedId;
     }
-
-    public Post() {
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getOwnerId() {
-        return ownerId;
-    }
-
-    public void setOwnerId(int ownerId) {
-        this.ownerId = ownerId;
-    }
-
-    public int getDate() {
-        return date;
-    }
-
-    public void setDate(int date) {
-        this.date = date;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
-    }
-
-
 }
